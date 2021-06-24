@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Link , Route,Switch } from 'react-router-dom';
 
-import Navbar from './Components/Navbar'
+import NavbarHeader from './Components/Navbar'
 import Home from './Components/Home'
 import Profile from './Components/Profile'
 import CarDetails from './Components/CarDetails'
@@ -30,7 +30,7 @@ function App() {
   return (
     <div>
       <Router>
-      <Navbar/>
+      <NavbarHeader/>
        
       <Switch>
         <Route exact path="/">
@@ -42,7 +42,7 @@ function App() {
         {/* <Route path="/Dashboard/:productId">
           <Car />
         </Route> */}
-        <Route path="/dashboard/:carId">
+        <Route path="/dashboard/:{carId}">
           <CarDetails data={data} />
         </Route>
       </Switch>
