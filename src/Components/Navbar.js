@@ -12,7 +12,7 @@ const NavbarHeader = () =>{
     <Nav className="ml-auto">
 
       <Nav.Link><Link to="/">Home</Link></Nav.Link>
-      <Nav.Link >Dashboard      
+      <Nav.Link >
               <Link to="/Dashboard">Dashboard 
  <i className="fa fa-user-circle" aria-hidden="true"></i> </Link></Nav.Link>
     

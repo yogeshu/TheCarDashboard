@@ -6,7 +6,10 @@
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
-  
+  background: #c31432;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .navbar-brand{
   color: antiquewhite !important;
@@ -18,11 +21,11 @@ body{
   color: aquamarine;
 }
 .bg-image{
-  color: antiquewhite;
- background-image: url('https://i.pinimg.com/236x/47/46/0d/47460db021bb6fbba092a3b35aecaa76.jpg');
+  /* color: antiquewhite; */
+ /* background-image: url('https://i.pinimg.com/236x/47/46/0d/47460db021bb6fbba092a3b35aecaa76.jpg');
  background-repeat: no-repeat;
  background-position: center center;
- background-size: cover;
+ background-size: cover; */
 }
 .card{
   display: flex;
