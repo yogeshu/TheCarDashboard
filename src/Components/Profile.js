@@ -14,40 +14,42 @@ export default function Profile({data}) {
        </div> : null;
 
     });
-    // const sports = data.map(car => {
-    //     return (
-    //          car.type === "sports" ?  
-    //       <div key={car.id}>
-    //         <h3>
-    //           <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
-    //         </h3>
-    //         <p>Price: ${car.price}</p>
-    //         <hr />
-    //       </div> : null
-    //     )
-    // });
-    // const suvs = data.map(car => {
-    //     return (
-    //       <div key={car.id}>
-    //         <h3>
-    //           <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
-    //         </h3>
-    //         <p>Price: ${car.price}</p>
-    //         <hr />
-    //       </div>
-    //     )
-    // });
-    // const hatchback = data.map(car => {
-    //     return (
-    //       <div key={car.id}>
-    //         <h3>
-    //           <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
-    //         </h3>
-    //         <p>Price: ${car.price}</p>
-    //         <hr />
-    //       </div>
-    //     )
-    // });
+    const sports = data.map(car => {
+        return (
+             car.type === "sports" ?  
+          <div key={car.id}>
+            <h3>
+              <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
+            </h3>
+            <p>Price: ${car.price}</p>
+            <hr />
+          </div> : null
+        )
+    });
+    const suvs = data.map(car => {
+        return (
+            car.type === 'SUVs' ?
+          <div key={car.id}>
+            <h3>
+              <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
+            </h3>
+            <p>Price: ${car.price}</p>
+            <hr />
+          </div> : null
+        )
+    });
+    const hatchback = data.map(car => {
+        return (
+             car.type === "hatchback" ?
+          <div key={car.id}>
+            <h3>
+              <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
+            </h3>
+            <p>Price: ${car.price}</p>
+            <hr />
+          </div> : null
+        )
+    });
     return (
         <div>  
             
@@ -61,13 +63,13 @@ export default function Profile({data}) {
  {sedan}
   </Tab>
   <Tab eventKey="profile" title="Honda">
-   Sedan
+   {suvs}
   </Tab>
   <Tab eventKey="contact" title="Convertable" >
-  Convertable
+ {hatchback}
   </Tab>
   <Tab eventKey="sports" title="Sports">
-      Cards
+      {sports}
   </Tab>
 </Tabs>
         </div>
