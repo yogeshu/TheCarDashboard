@@ -1,11 +1,13 @@
-import logo from './logo.svg';
+import React from 'react'
+import { BrowserRouter as Router, Link , Route,Switch } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Router>
       Car Dashboard
-      
+     </Router>   
     </div>
   );
 }
