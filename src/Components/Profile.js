@@ -2,8 +2,11 @@ import React from 'react'
 import { Link} from 'react-router-dom'
 import {Tab, Tabs } from 'react-bootstrap'
 export default function Profile({data}) {
-    const [key, setKey] = React.useState('home');
-    
+    const [key, setKey] = React.useState(localStorage.getItem("tabIndex"));
+    console.log(key)
+    const tabValue = localStorage.setItem("tabIndex", key);
+    const getTabValue = localStorage.getItem("tabIndex")
+   
     const sedan = data.map(car => {
          return car.type == "sedan" ?  <div key={car.id}>
          <h3>
@@ -50,14 +53,21 @@ export default function Profile({data}) {
           </div> : null
         )
     });
+    const currentTab = () => {
+        let path = window.location.pathname
+        if (path === "/sedan") return 1
+        else if (path === "/") return 2
+        else if (path === "/Contact") return 3
+      }
+    
     return (
         <div>  
             
             <Tabs
-            
+            unmountOnExit={false}
             id="controlled-tab-example"
-            activeKey={key}
-            onSelect={(k) => setKey(k)}
+            activeKey={key }
+            onSelect={(getTabValue) => setKey(getTabValue)}
           >
   <Tab eventKey="home" title="Sedan">
  {sedan}

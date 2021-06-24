@@ -1,14 +1,14 @@
 [ 
     {
       "id": "1",
-      "name": "Car Poster",
+      "name": "2Skoda Rapid TSI SKODA RAPID TSI",
       "description": "Everyone's favorite Car who loves to hate",
       "price": 15,
       "type" : "sedan"
     },
     {
       "id": "2",
-      "name": "Stretch Armstrong",
+      "name": "BMW 3 Series BMW 3 SERIES",
       "description":
         "He bends! He stretches! He even ties in knots, but always returns to his original shape!",
       "price": 20,
@@ -16,7 +16,7 @@
     },
     {
       "id": "3",
-      "name": "Hungry Hungry Hippos Game",
+      "name": "10Audi A4 AUDI A4",
       "description":
         "It's a race, it's a chase, hurry up and feed their face! Who will win? No one knows! Feed the hungry hip-ip-pos!",
       "price": 30,
@@ -24,14 +24,15 @@
     },
     {
       "id": "4",
-      "name": "Crossfire board game",
+      "name": "Toyota Yaris TOYOTA YARIS",
       "description": "You'll get caught up in the crossfire!",
       "price": 35,
+
       "type" : "sedan"
     },
     {
         "id": "5",
-        "name": "Grumpy Car Poster",
+        "name": "Grumpy Car ",
         "description": "Everyone's favorite Car who loves to hate",
         "price": 15,
         "type" : "sedan"
@@ -55,14 +56,14 @@
       },
       {
         "id": "8",
-        "name": "Crossfire board game",
+        "name": "BMW M3",
         "description": "You'll get caught up in the crossfire!",
         "price": 35,
         "type" : "sports"
       },
       {
         "id": "9",
-        "name": "Grumpy Car Poster",
+        "name": "BMW M2",
         "description": "Everyone's favorite Car who loves to hate",
         "price": 15,
         "type" : "sports"
@@ -70,7 +71,7 @@
       },
       {
         "id": "10",
-        "name": "Stretch Armstrong",
+        "name": "Toyota GR Supra ",
         "description":
           "He bends! He stretches! He even ties in knots, but always returns to his original shape!",
         "price": 20,
@@ -79,7 +80,7 @@
       },
       {
         "id": "11",
-        "name": "Hungry Hungry Hippos Game",
+        "name": "McLaren",
         "description":
           "It's a race, it's a chase, hurry up and feed their face! Who will win? No one knows! Feed the hungry hip-ip-pos!",
         "price": 30,
@@ -113,7 +114,7 @@
       },
       {
         "id": "15",
-        "name": "Hungry Hungry Hippos Game",
+        "name": "Tesla",
         "description":
           "It's a race, it's a chase, hurry up and feed their face! Who will win? No one knows! Feed the hungry hip-ip-pos!",
         "price": 30,
@@ -121,7 +122,7 @@
       },
       {
         "id": "16",
-        "name": "Crossfire board game",
+        "name": "Jagur",
         "description": "You'll get caught up in the crossfire!",
         "price": 35,
         "type": "SUVs"
