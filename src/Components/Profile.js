@@ -1,20 +1,32 @@
 import React from 'react'
 import { Link} from 'react-router-dom'
-import {Tab, Tabs } from 'react-bootstrap'
+import {Tab, Tabs, Card } from 'react-bootstrap'
 export default function Profile({data}) {
     const [key, setKey] = React.useState(localStorage.getItem("tabIndex"));
     console.log(key)
     const tabValue = localStorage.setItem("tabIndex", key);
     const getTabValue = localStorage.getItem("tabIndex")
-   
+   const numberimg = Math.floor(Math.random()* 10 - 1)
     const sedan = data.map(car => {
-         return car.type == "sedan" ?  <div key={car.id}>
-         <h3>
-           <Link to={`/dashboard/${car.id}`}>{car.name}</Link>
-         </h3>
-         <p>Price: ${car.price}</p>
-         <hr />
-       </div> : null;
+         return car.type == "sedan" ?  
+         <div className="card py-4" style={{flexDirection: 'row'}}> 
+         <Card style={{ width: '18rem' }}>
+  <Card.Img variant="top" src={`https://picsum.photos/${numberimg + car.id}`} />
+  <Card.Body>
+    <Card.Title>{car.name}</Card.Title>
+    <Card.Text>
+    
+    </Card.Text>
+  </Card.Body>
+ 
+  <Card.Body>
+  <Link to={`/dashboard/${car.id}`}> Go to Page</Link>
+
+  </Card.Body>
+</Card>
+     </div>
+         
+          : null;
 
     });
     const sports = data.map(car => {
@@ -69,8 +81,8 @@ export default function Profile({data}) {
             activeKey={key }
             onSelect={(getTabValue) => setKey(getTabValue)}
           >
-  <Tab eventKey="home" title="Sedan">
- {sedan}
+  <Tab eventKey="home" title="Sedan" className="text-center">
+      {sedan}
   </Tab>
   <Tab eventKey="profile" title="Honda">
    {suvs}

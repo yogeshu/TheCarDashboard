@@ -6,7 +6,7 @@
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: 16px;
-  color: aliceblue;
+  
 }
 .navbar-brand{
   color: antiquewhite !important;
@@ -16,4 +16,15 @@ body{
 }
 .navbar-light .navbar-nav .nav-link:hover{
   color: aquamarine;
+}
+.bg-image{
+  color: antiquewhite;
+ background-image: url('https://i.pinimg.com/236x/47/46/0d/47460db021bb6fbba092a3b35aecaa76.jpg');
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+}
+.card{
+  display: flex;
+  justify-content: center;
 }

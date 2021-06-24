@@ -6,15 +6,15 @@ const NavbarHeader = () =>{
 
 
 <Navbar bg="dark" expand="lg">
-  <Navbar.Brand href="#home"> Card Dashboard </Navbar.Brand>
+  <Navbar.Brand >  Card Dashboard </Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="ml-auto">
 
-          
-      <Nav.Link href="#home"><Link to="/">Home</Link></Nav.Link>
-      <Nav.Link to>Dashboard            <Link to="/Dashboard">Dashboard</Link>
- <i className="fa fa-user-circle" aria-hidden="true"></i></Nav.Link>
+      <Nav.Link><Link to="/">Home</Link></Nav.Link>
+      <Nav.Link >Dashboard      
+              <Link to="/Dashboard">Dashboard 
+ <i className="fa fa-user-circle" aria-hidden="true"></i> </Link></Nav.Link>
     
     </Nav>
     
